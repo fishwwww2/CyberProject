@@ -1,16 +1,88 @@
-# React + Vite
+# 🛒 Cyber Shop (React E-commerce Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React를 사용하여 구현하는 전자제품 중심의 쇼핑몰 웹 애플리케이션입니다.  
+메인 페이지, 상품 목록 페이지, 필터 및 정렬 기능을 단계적으로 구현하며  
+**이슈 기반 개발 + 브랜치 전략**을 연습하는 것을 목표로 합니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tech Stack
 
-## React Compiler
+- React
+- Vite
+- JavaScript (ES6+)
+- TailwindCss
+- Git & GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 프로젝트 구조 (미완성)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├─ components/ # 공통 컴포넌트
+├─ pages/ # 페이지 단위 컴포넌트
+├─ data/ # 더미 데이터
+├─ hooks/ # 커스텀 훅
+└─ assets/ # 이미지, 아이콘
+
+
+---
+
+## 📌 기능 개발 이슈 목록
+
+### 🏠 메인 페이지
+
+- **#1 메인 페이지 전체 레이아웃**
+- **#2 메인 배너 컴포넌트**
+- **#3 카테고리 카드 UI**
+- **#4 상품 카드 공통 컴포넌트**
+
+---
+
+### 📱 상품 목록 페이지
+
+- **#5 상품 리스트 페이지 레이아웃**
+- **#6 필터 사이드바 UI**
+- **#7 브랜드 필터 기능**
+- **#8 정렬 드롭다운 기능**
+
+---
+
+### 🔁 공통 기능
+
+- **#9 Header / Footer 컴포넌트**
+- **#10 더미 상품 데이터 구조 설계**
+
+---
+
+## 🌿 Git 브랜치 전략
+
+main → 배포 및 최종 코드
+develop → 개발 통합 브랜치
+feature/* → 기능 단위 개발 브랜치
+
+
+### 브랜치 네이밍 규칙
+feature/{이슈번호}-{기능설명}
+
+---
+
+## 🧾 커밋 메시지 규칙
+
+커밋 메시지는 **Conventional Commits** 형식을 따릅니다.
+
+### 타입 종류
+
+- **feat**: 새로운 기능 추가
+- **fix**: 버그 수정
+- **style**: UI / 스타일 변경
+- **chore**: 설정, 환경 구성
+- **refactor**: 코드 리팩토링
+
+### 예시
+
+```text
+feat: 상품 카드 컴포넌트 추가
+fix: 필터 선택 시 UI 깨짐 수정
+style: 버튼 hover 스타일 수정
+chore: eslint 설정
