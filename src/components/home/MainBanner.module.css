@@ -1,0 +1,82 @@
+.heroBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 80px 120px;
+  background: linear-gradient(135deg, #1f1c2c, #2a263a);
+  color: #fff;
+  width: 100%;
+}
+
+.heroText span {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.heroTitle {
+  font-size: 56px;
+  margin: 16px 0;
+  font-weight: 300;
+}
+
+.heroTitle strong {
+  font-weight: 700;
+}
+
+.heroDesc {
+  max-width: 400px;
+  margin-bottom: 24px;
+  opacity: 0.8;
+}
+
+.heroButton {
+  padding: 12px 28px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.heroImage {
+  width: 420px;
+  height: 520px;
+
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sub Banner */
+/* 수정 예정 */
+
+.subBannerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 120px;
+  background: #f5f5f5;
+  width: 100%;
+}
+
+.subBanner {
+  padding: 32px;
+  background: #fff;
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.subBannerTitle {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.subBannerDesc {
+  font-size: 14px;
+  opacity: 0.7;
+}

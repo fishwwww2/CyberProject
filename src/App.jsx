@@ -1,14 +1,8 @@
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+// App.jsx
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <>
-      <Header />
-      {/* 페이지 영역 */}
-      <Footer />
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
